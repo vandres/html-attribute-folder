@@ -1,4 +1,4 @@
-package dev.zbinski.htmlattributefolder
+package ch.voan.htmlattributefolder
 
 import com.intellij.psi.PsiElement
 

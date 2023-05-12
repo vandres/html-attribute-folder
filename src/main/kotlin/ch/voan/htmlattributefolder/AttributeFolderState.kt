@@ -1,4 +1,4 @@
-package dev.zbinski.htmlattributefolder
+package ch.voan.htmlattributefolder
 
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.components.PersistentStateComponent
@@ -13,7 +13,7 @@ import com.intellij.util.xmlb.XmlSerializerUtil
  * these persistent application settings are stored.
  */
 @State(
-    name = "dev.zbinski.htmlattributefolder.AttributeFolderState",
+    name = "ch.voan.htmlattributefolder.AttributeFolderState",
     storages = [Storage("html-attribute-folder.settings.xml")]
 )
 class AttributeFolderState : PersistentStateComponent<AttributeFolderState> {

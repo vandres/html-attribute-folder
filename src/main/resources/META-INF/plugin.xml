@@ -1,16 +1,16 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>dev.zbinski.html-attribute-folder</id>
+    <id>ch.voan.html-attribute-folder</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
     <name>HTML Attribute Folder</name>
 
-    <version>1.0.1</version>
+    <version>2.0.0</version>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="dawid@zbinski.dev" url="https://zbinski.dev">Dawid Zbiński</vendor>
+    <vendor email="andres@voan.ch" url="https://www.voan.ch">Volker Andres</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
@@ -21,6 +21,8 @@
     Any template written in XML, HTML, XHTML and DTD is supported by the plugin.
     The plugin will not edit your real code in any way, and you can choose
     whether to fold the items by default, placeholder for folded items, and how the folding looks like.
+
+    (Fork of Dawid Zbiński, thank you for the initial Plugin!)
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -32,17 +34,17 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="dev.zbinski.htmlattributefolder.AttributeFolderState"/>
+        <applicationService serviceImplementation="ch.voan.htmlattributefolder.AttributeFolderState"/>
 
-        <lang.foldingBuilder language="DTD" implementationClass="dev.zbinski.htmlattributefolder.AttributeFolder"/>
-        <lang.foldingBuilder language="XML" implementationClass="dev.zbinski.htmlattributefolder.AttributeFolder"/>
-        <lang.foldingBuilder language="HTML" implementationClass="dev.zbinski.htmlattributefolder.AttributeFolder"/>
-        <lang.foldingBuilder language="XHTML" implementationClass="dev.zbinski.htmlattributefolder.AttributeFolder"/>
+        <lang.foldingBuilder language="DTD" implementationClass="ch.voan.htmlattributefolder.AttributeFolder"/>
+        <lang.foldingBuilder language="XML" implementationClass="ch.voan.htmlattributefolder.AttributeFolder"/>
+        <lang.foldingBuilder language="HTML" implementationClass="ch.voan.htmlattributefolder.AttributeFolder"/>
+        <lang.foldingBuilder language="XHTML" implementationClass="ch.voan.htmlattributefolder.AttributeFolder"/>
 
         <projectConfigurable parentId="tools"
                              nonDefaultProject="true"
                              displayName="HTML Attribute Folder Settings"
-                             id="dev.zbinski.htmlattributefolder.AttributeFolderSettings"
-                             instance="dev.zbinski.htmlattributefolder.AttributeFolderSettings"/>
+                             id="ch.voan.htmlattributefolder.AttributeFolderSettings"
+                             instance="ch.voan.htmlattributefolder.AttributeFolderSettings"/>
     </extensions>
 </idea-plugin>

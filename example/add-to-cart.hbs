@@ -1,0 +1,16 @@
+<div class="js-number-wrap w-201px border-2 border-primary-light rounded-default flex items-center relative group">
+    <span class="bg-white absolute px-3px text-primary-dark text-small leading-tight top-0 -translate-y-1/2 left-2.5">Pack</span>
+    <div class="absolute flex-col justify-between left-55-sml -translate-x-full h-input flex">
+        <button class="js-increase w-4 h-4 bg-primary-light text-primary-dark relative rounded-default hover:bg-primary-dark hover:text-primary-light transition-all duration-200">
+            <span class="ifont ifont--plus text-lg absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none"></span>
+        </button>
+        <button class="js-decrease w-4 h-4 bg-primary-light text-primary-dark relative rounded-default hover:bg-primary-dark hover:text-primary-light transition-all duration-200">
+            <span class="ifont ifont--minus text-lg absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none"></span>
+        </button>
+    </div>
+    <input type="number" pattern="\d*" name="add-to-cart" class="js-number border-0 w-full basis-input text-center py-2 pr-0.5 focus:ring-0" value="1">
+    <span class="absolute w-px h-input block bg-primary-light top-1.5 left-55 z-0"></span>
+    <button class="js-add-to-cart js-open-additional-cart-modal w-full basis-cart ml-auto leading-none transition-all duration-200 px-2 text-secondary py-2 hover:bg-secondary hover:text-white relative z-0">
+        <span class="ifont ifont--cart text-3xl"></span>
+    </button>
+</div>
